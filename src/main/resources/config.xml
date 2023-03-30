@@ -11,10 +11,15 @@
 	                    http://www.springframework.org/schema/aop/spring-aop.xsd">
 
 
-<bean id="t1" class="kr.hs.study.beans.TestBean1" lazy-init="true" >
-    <constructor-arg value="3" type="int" />
-    <constructor-arg value="5.7" type="double" />
-    <constructor-arg value="java" type="String" />
+<bean id="t1" class="kr.hs.study.beans.TestBean1">
+    <constructor-arg value="1"/>
+    <constructor-arg value="1.1"/>
+    <constructor-arg value="spring1"/>
+</bean>
+<bean id="t2" class="kr.hs.study.beans.TestBean1" >
+    <property name="data1" value="2" />
+    <property name="data2" value="2.2" />
+    <property name="data3" value="spring2"/>
 </bean>
 
 
